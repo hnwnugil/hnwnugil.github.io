@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Nugil Portfolio</title>
+  <meta name="description" content="Portfolio of Nugil (Hilmi Nugraha Wirasaputra), Game Technology student at PENS.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&family=Share+Tech+Mono&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="monitor">
+  <div class="rig">
+  <div class="fp tl" aria-hidden="true"></div><div class="fp t" aria-hidden="true"></div><div class="fp tr" aria-hidden="true"></div>
+  <div class="fp l" aria-hidden="true"></div><div class="fp r" aria-hidden="true"></div>
+  <div class="fchin" aria-hidden="true"><div class="fp cl"></div><div class="fp ca"></div><div class="fp cd"></div><div class="fp cb"></div><div class="fp cr"></div></div>
+  <div class="fp st" aria-hidden="true"></div>
+  <div class="bezel">
+    <div class="screen scan">
+      <div class="roll" aria-hidden="true"></div>
+      <div class="scroll" id="scroll" tabindex="0" aria-label="Portfolio screen">
+      <main class="content glow">
+
+<pre class="boot" aria-hidden="true">NUGIL-220 ROM BIOS v2.6   (C) 2026 PENS GAMETECH
+MEMORY TEST ........ 640K <b>OK</b>
+MOUNT /dev/itch .... 5 TITLES <b>OK</b>
+LOADING PORTFOLIO.SYS ....... <b>OK</b></pre>
+
+        <section class="block" aria-label="Intro">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> whoami</div>
+          <h1 class="name">NUGIL</h1>
+          <p class="sub">Hilmi Nugraha Wirasaputra <span class="dim">// game programmer</span></p>
+          <dl class="kv">
+            <dt>CAMPUS</dt><dd>Politeknik Elektronika Negeri Surabaya</dd>
+            <dt>MAJOR</dt><dd>Game Technology</dd>
+            <dt>OS</dt><dd>Linux</dd>
+            <dt>INTERESTS</dt><dd>programming, game mechanics, Linux</dd>
+          </dl>
+        </section>
+
+        <section class="block" aria-label="About me">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> cat ABOUT.TXT</div>
+          <p class="about">I'm a Game Technology student at PENS, interested in programming, game mechanics, and Linux. I like building small prototypes that take one mechanic and push it as far as it goes.</p>
+        </section>
+
+        <section class="block" aria-label="Proficient at">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> tree SKILLS/</div>
+<pre class="tree">SKILLS/
+├── <span class="d">ENGINES/</span>
+│   ├── Unity
+│   └── Unreal Engine
+├── <span class="d">LANGUAGES/</span>
+│   ├── C++
+│   ├── C#
+│   └── Java
+├── <span class="d">WEB/</span>
+│   ├── HTML
+│   └── CSS
+└── <span class="d">DESIGN/</span>
+    └── Figma</pre>
+        </section>
+
+        <section class="block" id="games" aria-label="Games">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> ls GAMES/ <span class="dim"># select a game to read its .NFO</span></div>
+          <div class="games">
+            <button class="game" type="button" data-id="uphill">
+              <div class="bar"><span>UPHILL_DELIVERY.EXE</span><span>PLATFORMER</span></div>
+              <div class="art"><img src="assets/games/uphill-delivery.jpg" alt="Uphill Delivery cover"></div>
+              <div class="info">
+                <p>Wobble. Struggle. Deliver.</p>
+                <span class="tags">[PLATFORMER] [ROLE: ?]</span>
+              </div>
+            </button>
+            <button class="game" type="button" data-id="onpoint">
+              <div class="bar"><span>ON_POINT.EXE</span><span>123M</span></div>
+              <div class="art"><img src="assets/games/on-point.jpg" alt="On Point cover"></div>
+              <div class="info">
+                <p>A precision simulation about aiming perfectly. Silly premise, serious controls.</p>
+                <span class="tags">[JAM: GARENA GAME JAM 2026] [PROGRAMMER] [WIN]</span>
+              </div>
+            </button>
+            <button class="game" type="button" data-id="djamoe">
+              <div class="bar"><span>DJAMOE.EXE</span><span>WIN</span></div>
+              <div class="art"><img src="assets/games/d-jamoe.jpg" alt="D'JAMOE cover"></div>
+              <div class="info">
+                <p>Take orders and make herbal drinks for the village.</p>
+                <span class="tags">[ROLE: ?] [WIN]</span>
+              </div>
+            </button>
+            <button class="game" type="button" data-id="whac">
+              <div class="bar"><span>WHAC_ALIEN.EXE</span><span>38M</span></div>
+              <div class="art"><img src="assets/games/whac-a-lien.jpg" alt="Whac (A)lien cover"></div>
+              <div class="info">
+                <p>Whack-a-mole with a twist: hit the bombs, dodge the aliens, with inverted mouse controls, all in under a minute.</p>
+                <span class="tags">[JAM: GT INTERNAL S13] [PROGRAMMER] [WIN]</span>
+              </div>
+            </button>
+            <!-- ===== NEW GAME CARD: fill this in =====
+                 1. Change the file name and the right-hand label in .bar
+                 2. Put your cover inside .art:  <img src="assets/games/your-cover.jpg" alt="Game cover">
+                 3. Write a short description in <p> and tags in .tags
+                 4. Fill the popup text in the script below, under  newgame: { ... }
+            -->
+            <button class="game" type="button" data-id="newgame">
+              <div class="bar"><span>NEW_GAME.EXE</span><span>WIP</span></div>
+              <div class="art"></div>
+              <div class="info">
+                <p></p>
+                <span class="tags"></span>
+              </div>
+            </button>
+          </div>
+          <div><a href="https://nugil.itch.io/" target="_blank" rel="noopener">&gt; nugil.itch.io</a></div>
+        </section>
+
+        <section class="block" aria-label="Organizational experience">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> git log --oneline EXPERIENCE</div>
+          <ol class="log">
+            <li><span class="h">a3f9c21</span><span class="y">2026</span><span class="m"><span class="inv">HEAD</span> Game Technology Representative @ IGDX 2026</span></li>
+            <li><span class="h">7e1b04d</span><span class="y">2026</span><span class="m">Senior Staff, International Affairs @ BSO Game Technology</span></li>
+            <li><span class="h">c58d2ae</span><span class="y">2025-2026</span><span class="m">Head of Media Division @ PESMA Thaybah</span></li>
+            <li><span class="h">19ab6f0</span><span class="y">2025-2026</span><span class="m">Junior Staff, International Affairs @ BSO Game Technology</span></li>
+          </ol>
+        </section>
+
+        <section class="block" id="contact" aria-label="Contact">
+          <div class="cmd"><span class="p">nugil@pens:~$</span> ./CONTACT.SH</div>
+          <div class="contact">
+            <div class="crow"><span class="k">EMAIL</span><span class="val"><span class="v" id="email">hnwnugil@gmail.com</span> <button class="tbtn copy" type="button" data-target="email" id="copy-email">[COPY]</button> <span class="msg" aria-live="polite"></span></span></div>
+            <div class="crow"><span class="k">WHATSAPP</span><span class="val"><span class="v" id="wa">+62 819-9902-2850</span> <button class="tbtn copy" type="button" data-target="wa" id="copy-wa">[COPY]</button> <a href="https://wa.me/6281999022850" target="_blank" rel="noopener">[CHAT]</a> <span class="msg" aria-live="polite"></span></span></div>
+            <div class="crow"><span class="k">GITHUB</span><span class="val"><a href="https://github.com/hnwnugil" target="_blank" rel="noopener">github.com/hnwnugil</a></span></div>
+            <div class="crow"><span class="k">INSTAGRAM</span><span class="val"><a href="https://www.instagram.com/hnwnugil/" target="_blank" rel="noopener">@hnwnugil</a></span></div>
+            <div class="crow"><span class="k">ITCH.IO</span><span class="val"><a href="https://nugil.itch.io/" target="_blank" rel="noopener">nugil.itch.io</a></span></div>
+          </div>
+        </section>
+
+        <div class="cmd"><span class="p">nugil@pens:~$</span> <span class="cursor" aria-hidden="true"></span></div>
+      </main>
+      </div>
+      <div class="bootseq glow" id="bootseq" aria-hidden="true">
+        <div class="bootview">
+          <div class="bootlines" id="bootlines"></div>
+          <div class="bootskip">[ click or press any key to skip ]</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="chin">
+    <div class="brand"><span class="led" aria-hidden="true"></span>NUGIL-220 <small>Video Display Terminal</small></div>
+    <div class="credit">Monitor photo: Gateway 2000 CrystalScan, Wikimedia Commons</div>
+    <div class="knobs" role="group" aria-label="Display settings">
+      <button class="knob" type="button" data-ph="green" id="ph-green" aria-pressed="true">Green</button>
+      <button class="knob" type="button" data-ph="amber" id="ph-amber" aria-pressed="false">Amber</button>
+      <button class="knob" type="button" data-ph="white" id="ph-white" aria-pressed="false">White</button>
+      <button class="knob" type="button" id="crt-toggle" aria-pressed="true">CRT</button>
+    </div>
+  </div>
+</div>
+
+<footer class="copyright">&copy; 2026 hnwnugil. All rights reserved.</footer>
+
+<div class="overlay" id="launch" hidden>
+  <div class="dialog scan glow" role="dialog" aria-modal="true" aria-labelledby="nfo-title">
+    <div class="title"><span>NFO VIEWER</span><span id="nfo-file">GAME.NFO</span></div>
+    <div class="body">
+      <div class="line"><span class="dim">nugil@pens:~$</span> cat <span data-f="nfo">GAME.NFO</span></div>
+      <div class="art" data-step><img id="nfo-img" src="" alt=""></div>
+      <div class="line" id="nfo-title" data-step data-f="title">GAME</div>
+      <div class="line dim" data-step data-f="meta">--</div>
+      <div class="line lbl" data-step>DESCRIPTION:</div>
+      <div class="line tx" data-step data-f="desc">--</div>
+      <div class="line lbl" data-step>MY ROLE:</div>
+      <div class="line tx" data-step data-f="role">--</div>
+      <div class="actions" data-step>
+        <a class="act go" id="nfo-go" href="https://nugil.itch.io/" target="_blank" rel="noopener">[ENTER] PLAY ON ITCH.IO</a>
+        <button class="act" id="launch-no" type="button">[ESC] CLOSE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
