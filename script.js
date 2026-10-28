@@ -215,7 +215,7 @@
 
         var t = 750;
         at(t, function () {
-            add('<span class="big">NUGIL-220 ROM BIOS v2.6</span>   (C) 2026 PENS GAMETECH');
+            add('<span class="big">NUGIL-220 ROM BIOS v2.6</span>   (C) HNWNUGIL');
             add("&nbsp;");
         });
         t += 250;
