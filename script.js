@@ -202,9 +202,15 @@
             bt.forEach(clearTimeout);
             document.removeEventListener("keydown", skipKey, true);
             el.classList.add("done");
-            setTimeout(function () {
+            var gone = false;
+            var kill = function () {
+                if (gone) return;
+                gone = true;
+                el.hidden = true;
                 el.remove();
-            }, 400);
+            };
+            el.addEventListener("transitionend", kill);
+            setTimeout(kill, 500);
         }
         function skipKey(e) {
             if (e.key === "Tab") return;

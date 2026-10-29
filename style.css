@@ -750,7 +750,7 @@ h1.name {
     background: var(--glass);
     cursor: pointer;
     transition: opacity 0.35s ease;
-    animation: boot-fallback 0.01s 8s forwards;
+    animation: boot-fallback 0s 8s forwards;
 }
 .bootseq.done {
     opacity: 0;
@@ -758,7 +758,6 @@ h1.name {
 }
 @keyframes boot-fallback {
     to {
-        opacity: 0;
         visibility: hidden;
         pointer-events: none;
     }
