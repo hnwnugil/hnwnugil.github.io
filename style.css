@@ -341,7 +341,7 @@ h1.name {
 /* games */
 .games {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, max(300px, calc(50% - 8px))), 1fr));
     gap: 16px;
 }
 .game {
@@ -692,7 +692,7 @@ h1.name {
     }
     .games {
         font-size: clamp(20px, 2.2dvh, 28px);
-        grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, max(320px, calc(50% - 8px))), 1fr));
     }
     .chin {
         justify-content: center;
