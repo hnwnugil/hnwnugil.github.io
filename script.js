@@ -70,6 +70,14 @@
 
     /* game NFO popup */
     var NFO = {
+        maduras: {
+            file: "THE_MADURAS.NFO",
+            title: "THE MADURAS",
+            meta: "GameJam+ 26/27 Indonesia · simulation · WebGL · prototype",
+            desc: "You run the night shift at a Warung Madura. Talk to customers, check their IDs and phones, then serve or refuse. Money is the only score, and you see what your choices did to the neighborhood between shifts. There are three endings.",
+            role: "Game programmer.",
+            url: "https://nugil.itch.io/the-maduras",
+        },
         uphill: {
             file: "UPHILL_DELIVERY.NFO",
             title: "UPHILL DELIVERY",
